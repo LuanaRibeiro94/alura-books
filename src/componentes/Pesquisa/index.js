@@ -8,7 +8,7 @@ const PesquisaContainer = styled.section`
   color: #FFF;
   text-align: center;
   padding: 85px 0;
-  height: 100%;
+  height: 470px;
   width: 100%;
 `
 
@@ -44,8 +44,7 @@ const Resultado = styled.div`
 
 function Pesquisa() {
   const [livrosPesquisados, setLivrosPesquisados] = useState([]); 
-  console.log(livrosPesquisados);
-
+  
   return (
     <PesquisaContainer>
       <Titulo>Já sabe por onde começar?</Titulo>
@@ -62,10 +61,8 @@ function Pesquisa() {
         <Resultado>
           <img src={livro.img}></img>
           <p>{livro.titulo}</p>
-         
         </Resultado>
       ))}
-
     </PesquisaContainer>
   )
 }
